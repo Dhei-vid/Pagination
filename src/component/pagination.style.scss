@@ -1,0 +1,92 @@
+.pagination-container {
+  display: flex;
+  margin: 3rem;
+  justify-content: space-between;
+  color: #545f7d;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  .right-pagination,
+  .left-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1rem;
+    gap: 10px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  select {
+    background: rgba(33, 63, 125, 0.1);
+    border: 1px solid rgba(33, 63, 125, 0.2);
+    border-radius: 4px;
+    color: #213f7d;
+    padding: 10px;
+    border: none;
+    outline: none;
+
+    option {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  }
+
+  .left-arrow,
+  .right-arrow {
+    background: rgba(33, 63, 125, 0.1);
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  .page-list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+}
+
+.list-item-container {
+  margin: 3rem;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+
+  .list-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    .list-item {
+      border: solid 1px #545f7d;
+    }
+  }
+}
+
+button {
+  border: none;
+}
+
+.active {
+  cursor: pointer;
+  font-weight: 700;
+  // padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.normal {
+  cursor: pointer;
+  // padding: 0 0.5rem;
+}
